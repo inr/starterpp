@@ -128,8 +128,10 @@ IntegerLiteralSeparator:
   DecimalMinDigits: 0
   Hex: 0
   HexMinDigits: 0
-KeepEmptyLinesAtTheStartOfBlocks: false
-KeepEmptyLinesAtEOF: false
+KeepEmptyLines:
+  AtEndOfFile: true
+  AtStartOfBlock: false
+  AtStartOfFile: false
 LambdaBodyIndentation: Signature
 LineEnding: DeriveLF
 MacroBlockBegin: ''
@@ -139,6 +141,7 @@ NamespaceIndentation: None
 PackConstructorInitializers: NextLineOnly
 PenaltyBreakAssignment: 10
 PenaltyBreakBeforeFirstCallParameter: 0
+PenaltyBreakBeforeMemberAccess: 999
 PenaltyBreakComment: 30
 PenaltyBreakFirstLessLess: 10
 PenaltyBreakOpenParenthesis: 0
@@ -154,6 +157,7 @@ QualifierAlignment: Left
 ReferenceAlignment: Pointer
 ReflowComments: true
 RemoveBracesLLVM: false
+RemoveEmptyLinesInUnwrappedLines: true
 RemoveParentheses: Leave
 RemoveSemicolon: false
 RequiresClausePosition: OwnLine
@@ -213,5 +217,6 @@ WhitespaceSensitiveMacros:
   - NS_SWIFT_NAME
   - PP_STRINGIZE
   - STRINGIZE
+WrapNamespaceBodyWithEmptyLines: Always
 BasedOnStyle: LLVM
 ...
